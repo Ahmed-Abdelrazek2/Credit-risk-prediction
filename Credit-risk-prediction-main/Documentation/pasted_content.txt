@@ -1,0 +1,345 @@
+# Role
+
+You are a Senior Data Scientist, Machine Learning Engineer, Technical Writer, and GitHub Documentation Expert.
+
+Your task is to prepare a complete professional documentation package for an end-to-end Machine Learning project titled:
+
+**Credit Risk Prediction Using Machine Learning**
+
+The final output should be written entirely in **professional English**.
+
+---
+
+# Project Background
+
+The project predicts customer loan default using the **Give Me Some Credit** dataset.
+
+The complete workflow has already been implemented.
+
+The documentation must accurately describe the completed project rather than inventing new methods.
+
+---
+
+# Project Workflow
+
+The project consists of the following stages:
+
+1. Data Loading
+2. Exploratory Data Analysis (EDA)
+3. Data Cleaning & Preprocessing
+4. Train/Test Split (80/20 with Stratified Sampling)
+5. Baseline Model (Random Forest)
+6. Challenger Model (XGBoost)
+7. Stratified 5-Fold Cross Validation
+8. Threshold Optimization
+9. Business Cost Optimization
+10. Model Evaluation
+11. SHAP Explainability
+12. Final Business Conclusions
+
+---
+
+# Dataset
+
+Dataset:
+Give Me Some Credit
+
+Target Variable:
+
+SeriousDlqin2yrs
+
+Class 0:
+Customer did not default.
+
+Class 1:
+Customer defaulted within two years.
+
+---
+
+# EDA Summary
+
+The exploratory analysis included:
+
+* Dataset overview
+* Data types inspection
+* Missing value analysis
+* Duplicate detection
+* Statistical summary
+* Distribution analysis
+* Correlation analysis
+* Class imbalance visualization
+* Outlier detection
+* Feature skewness analysis
+
+Main findings:
+
+* No missing values.
+* Duplicate records were removed.
+* Highly imbalanced dataset (approximately 6.7% default cases).
+* Significant skewness in several numerical features.
+* Extreme outliers detected in financial variables.
+
+---
+
+# Preprocessing
+
+The preprocessing stage included:
+
+* Duplicate removal
+* Outlier treatment
+* Data validation
+* Saving cleaned dataset
+
+The cleaned dataset was exported as:
+
+clean_cs_training.csv
+
+---
+
+# Modeling
+
+Two models were developed.
+
+Baseline:
+
+Random Forest
+
+Challenger:
+
+XGBoost
+
+Cross Validation:
+
+Stratified K-Fold (5 folds)
+
+Threshold optimization was performed.
+
+Business Cost Optimization was also implemented.
+
+---
+
+# Final Evaluation Results
+
+Use these exact values throughout the report.
+
+Optimal Decision Threshold:
+0.44
+
+Expected Cost:
+$39,181,200
+
+ROC-AUC:
+0.8445
+
+PR-AUC:
+0.3623
+
+Gini Coefficient:
+0.6889
+
+KS Statistic:
+0.5350
+
+Brier Score:
+0.1226
+
+Classification Report
+
+Class 0
+
+Precision:
+0.98
+
+Recall:
+0.80
+
+F1:
+0.88
+
+Class 1
+
+Precision:
+0.21
+
+Recall:
+0.73
+
+F1:
+0.32
+
+Confusion Matrix
+
+[[89216 22289]
+[ 2135  5872]]
+
+The project also includes:
+
+* ROC Curve
+* Precision-Recall Curve
+* Calibration Curve
+* SHAP Summary Plot
+* Feature Importance Plot
+
+---
+
+# Team Members
+
+Ahmed Abdelrazek
+
+Arwa Mahmoud Hassan
+
+Malak Adel Abdelrahman
+
+Nour Hazem Nasr
+
+Sama Mohamed Elsayed
+
+Mohamed Reda Mohamed
+
+---
+
+# Required Deliverables
+
+Generate the following files.
+
+## 1. README.md
+
+Professional GitHub README including:
+
+* Banner Title
+* Project Description
+* Business Problem
+* Dataset
+* Workflow
+* Technologies
+* Installation
+* Usage
+* Results
+* Evaluation Metrics
+* Project Structure
+* Future Work
+* Team Members
+* License
+
+Length:
+2500–4000 words.
+
+---
+
+## 2. REPORT.md
+
+A professional academic report suitable for conversion into PDF.
+
+Include:
+
+* Cover Page
+* Abstract
+* Table of Contents
+* Introduction
+* Literature Background
+* Business Problem
+* Dataset Description
+* EDA
+* Data Preprocessing
+* Modeling
+* Evaluation
+* Business Cost Optimization
+* SHAP Explainability
+* Discussion
+* Business Conclusions
+* Future Work
+* References
+
+Length:
+6000–9000 words.
+
+---
+
+## 3. DOCUMENTATION.md
+
+Technical documentation describing:
+
+* Project Architecture
+* Folder Structure
+* Source Code Modules
+* Data Flow
+* Model Pipeline
+* Evaluation Pipeline
+* Deployment Preparation
+* Maintenance Guide
+
+Length:
+3000–5000 words.
+
+---
+
+## 4. CONTRIBUTING.md
+
+Professional GitHub contributing guide.
+
+---
+
+## 5. LICENSE
+
+MIT License.
+
+---
+
+## 6. requirements.txt
+
+Include all required Python libraries with recent stable versions.
+
+---
+
+## 7. .gitignore
+
+Professional Python + Jupyter + VS Code gitignore.
+
+---
+
+## 8. Repository Structure
+
+Generate the recommended repository tree.
+
+---
+
+## 9. Business Conclusions
+
+Write a dedicated section explaining:
+
+* Business value
+* Financial impact
+* Model strengths
+* Model limitations
+* Recommended deployment strategy
+
+---
+
+## 10. Future Work
+
+Suggest realistic improvements including:
+
+* Hyperparameter tuning
+* Ensemble learning
+* Probability calibration
+* Drift monitoring
+* Model retraining
+* API deployment
+* Streamlit dashboard
+* MLOps integration
+
+---
+
+# Writing Requirements
+
+* Use formal academic English.
+* Use professional technical terminology.
+* Avoid bullet-only documentation.
+* Write in complete paragraphs.
+* Include tables where appropriate.
+* Use Markdown formatting.
+* Do not invent project results.
+* Use the provided evaluation metrics exactly.
+* Make the documentation suitable for GitHub, university submission, and professional portfolio presentation.
+
+Produce each file separately with clear file names and complete content.

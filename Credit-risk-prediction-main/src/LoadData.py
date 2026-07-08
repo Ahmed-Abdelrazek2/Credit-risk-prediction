@@ -3,13 +3,17 @@
 
 import pandas as pd
 
-# ── Paths ─────────────────────────────────────────────
-train_path = r"D:\Projects\Depi Project\2\Credit-risk-prediction-main\data\cs-training.csv"
-test_path  = r"D:\Projects\Depi Project\2\Credit-risk-prediction-main\data\cs-test.csv"
-sample_path = r"D:\Projects\Depi Project\2\Credit-risk-prediction-main\data\sampleEntry.csv"
-dict_path = r"D:\Projects\Depi Project\2\Credit-risk-prediction-main\data\Data Dictionary.xls"
-read_data_path= r"D:\Projects\Depi Project\2\Credit-risk-prediction-main\data\ready_data.csv"
+import os
 
+# Base directory of the project
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+# Data paths
+train_path = os.path.join(BASE_DIR, "data", "cs-training.csv")
+test_path = os.path.join(BASE_DIR, "data", "cs-test.csv")
+sample_path = os.path.join(BASE_DIR, "data", "sampleEntry.csv")
+dict_path = os.path.join(BASE_DIR, "data", "Data Dictionary.xls")
+read_data_path = os.path.join(BASE_DIR, "data", "ready_data.csv")
 
 # ── Load CSV ─────────────────────────────────────────
 def load_csv(path):

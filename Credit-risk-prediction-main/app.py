@@ -96,7 +96,7 @@ income_is_missing = st.checkbox(
     value=False
 )
 
-def create_pdf(probability, risk_level,Recommendation):
+def create_pdf(probability, risk_level,recommendation):
 
     buffer = BytesIO()
 
